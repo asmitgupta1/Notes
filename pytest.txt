@@ -1,0 +1,6 @@
+Run command
+1) pytest -                        to run all the testcase
+2) pytest -v 			     to run all the testcases with more information
+3) pytest -v -s 			     to run the testcase with info and print statement
+4) pytest -vsk log 		     to run particular testcase whic have keword log
+5) pytest -m sanity                to run the group of testcases with mark sanity 

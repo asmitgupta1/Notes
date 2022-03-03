@@ -1,0 +1,50 @@
+Commands:-
+
+1. docker ps 				->it will show all the running container
+2. docker ps --all 			-> it will show the all the exited container
+3. docker run busybox ls 		-> used to enter in the container directory
+4. docker run busybox echo hello harry  -> instead of start up command run command "echo hello harry"
+5. docker stop "container_id" 		-> ask to  stop the container 
+6. docker create "container_id" 	-> to create a container for a running phase it will give a running hash_id of container
+7. docker run -a "_id of running container" -> to start the container and print the output
+8. docker logs "_id"	 		-> to print the logs
+9. docker kill 				-> to kill the container immediately
+10. docker exec -it "_id" sh		-> to run the command inside the container
+11. docker system prune			-> to delete the container
+12. docker build -f "file_name .	-> to build a image from file name other then Dockefile eg . Dockerfile.dev 
+
+
+Notes:-
+
+1. docker run = docker create + docker start
+2. -a = to print the output of the container
+3. if docker stop command not stopped the container in 10sec it leads to kill the container automatically
+4. -i(interactive mode) = to attach with stdin(intput)
+5. -t(sudo terminal) = to formatting the data 
+6. -d(detach mode) = terminal is also running in window
+6. sh = to run the terminal inside the container
+7. images = file system(fs) snapshot + startup command
+8. Docker file contains all the info for runnig your software in a base container
+
+
+process
+
+dockerfile-> docke client->docker server-> usable image
+
+
+How to create a custom image
+1. choose a base image
+2. run commands for yor software
+3. specify the base command to be ran at startup
+
+
+
+// for python
+
+1.pip freeze > requirements.txt
+2. docker build -t todo .
+3. docker run -p 8000(docker port):8000(application port) --name todo1(contaier name) todo(image name)
+
+// docker compose commands
+1.  docker-compose up -d 		-> to run the containers present in the dockercompose file
+2.  docker-cmpose down 			->to stop the containers .

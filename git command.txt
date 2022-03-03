@@ -1,0 +1,36 @@
+// for new git
+
+1. git config --global user.name Asmit
+2. git config --global user.email guptaasmit1@gmail.com
+
+
+
+// general
+
+1. git status  or git status -s
+2. git checkout -f/file_name  (to retrieve the code of last commit)
+3. git log
+4. git diff (comparing working directory with staging area)
+5. git diff --staged (comaprison between stage area and last commit)
+6. git commit -a -m "message"(direct commit)
+7. git rm --cached "file_name"
+8. git log -p -x (it will show last x number of commit data)
+9  git checkout -b "branch_name" (to add new branch and switch to it
+10. git branch "branch name" (to add new branch)
+11.git branch  (to show all the branches)
+12.git checkout "branch_name" (to switch between the branches)
+13.git merge asmit (to merge asmit to current branch) 
+
+// to initialize the project
+
+1. git init
+2. git add file_name or git add -A
+3. git commit 			or git commit -m "message"
+   1. initial message
+   2. press Esc+:+wq (exit)
+4. git status
+
+
+
+// github connection
+1.git push --set-upstream origin asmit		->to add new branch in github(cloud)
